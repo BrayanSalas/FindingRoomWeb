@@ -1,0 +1,196 @@
+<html>
+<head>
+  <title>Finding Room</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="archivos/css/bootstrap.min.css">
+  
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> 
+	<script src="js/respond.min.js"></script> <![endif]--> 		
+        <!-- Place favicon.ico in the root directory -->
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="archivos/css/normalize.css">
+        <link rel="stylesheet" href="archivos/css/main.css">
+        <link rel="stylesheet" href="archivos/css/bootstrap.min.css">
+        <link rel="stylesheet" href="archivos/css/font-awesome.min.css">
+        <link rel="stylesheet" href="archivos/css/owl.carousel.css">
+        <link rel="stylesheet" href="archivos/css/responsive.css">
+        <link rel="stylesheet" href="archivos/css/styles.css">
+  <link rel="stylesheet" href="style.css" />
+    <link href='archivos/img/logo3.png' rel='shortcut icon' type='image/png'>
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Finding Room</h3>
+    <input type="email" placeholder="Email" id="loginemail_field" />
+    <input type="password" placeholder="Password" id="loginpassword_field" />
+
+    <button onclick="login()">Entrar</button><br>
+    <button onclick="goRegister()">Registrar</button>
+  </div>
+
+  <div id="register_div" class="main-div">
+    <h3>Registro</h3>
+    <input type="text" placeholder="Name" id="name_field" />
+    <input type="text" placeholder="User" id="user_field" />
+    <input type="email" placeholder="Email" id="email_field" />
+    <input type="password" placeholder="Password" id="password_field" />
+    <button onclick="register()">Registrar</button><br>
+    <center><img src="https://image.freepik.com/iconen-gratis/terug-pijl_318-76329.jpg" onclick="back()" height="30" width="30"></center>
+  </div>
+    
+    <div id="user_div" class="user-div">
+    <header class="main_menu_sec navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12">
+				<div class="lft_hd">
+					<a href="index.html"><img src="archivos/img/logo3.png" height="30" alt=""/></a>
+				</div>
+			</div>			
+			<div class="col-lg-9 col-md-9 col-sm-12">
+				<div class="rgt_hd">					
+					<div class="main_menu">
+						<nav id="nav_menu">
+							<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>	
+						<div id="navbar">
+							<ul>
+								<li><a class="page-scroll" href="index.html">Inicio</a></li>
+                                <li><a class="page-scroll" onclick="miRenta()">Mi Renta</a></li> 
+							<li><a>Municipios en renta<i class="fa fa-angle-down"></i></a>
+							<ul>
+								<li><a class="page-scroll" onclick="casasApodaca()">Apodaca</a></li>
+								<li><a class="page-scroll" onclick="casasSanNicolas()">San Nicol&aacute;s</a></li>
+								<li><a class="page-scroll" onclick="casasEscobedo()">Escobedo</a></li>
+								<li><a class="page-scroll" onclick="casasSantaCatarina()">Santa Catarina</a></li>
+								</ul>
+							</li> 						
+								<li><a class="page-scroll" onclick="logout()">Cerrar Sesion</a></li>
+							</ul>
+						</div>		
+						</nav>			
+					</div>					
+						
+				</div>
+			</div>	
+		</div>	
+	</div>
+</header>
+
+<!-- End slider Section -->
+        <br>
+   <br><br>
+   <br><br><strong><center><p id="Introduccion">Bienvenido a Finding Room, estas son algunas casas en renta.</p></center></strong>
+
+<div id="contenedor1" class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <div id="casa1" class="panel-heading">Casa</div>
+                <div class="panel-body"><br>
+                  <center><img id="imgCasa1" src="archivos/img/loading.gif" width="500" height="400"></center>
+                  <br>
+                    <strong><p>Informaci&oacute;n:</p></strong>
+                    <p id="Informacion1">a</p>
+                    <strong><p>Ubicaci&oacute;n:</p></strong>
+                    <p id="Ubicacion1">a</p>
+                    <strong><p>Rec&aacute;maras:</p></strong>
+                    <p id="Recamaras1">a</p>
+                    <strong><p>Ba&ntilde;os:</p></strong>
+                    <p id="Banos1">a</p>
+                    <strong><p>Tel&eacute;fono:</p></strong>
+                    <p id="Telefono1">a</p>
+                    <strong><p>Precio:</p></strong>
+                    <p id="Precio1">a</p>
+                    <p id="Link1" hidden="true">a</p>
+                    
+                  <center><button id="1" onclick="rentar(this)">Rentar</button> </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contenedor2" class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <div id="casa2" class="panel-heading">Casa de renta Escobedo</div>
+                <div class="panel-body"><br>
+                  <center><img id="imgCasa2" src="archivos/img/loading.gif" width="500" height="400"></center>
+                  <br>
+                  <strong><p>Informaci&oacute;n:</p></strong>
+                    <p id="Informacion2">a</p>
+                    <strong><p>Ubicaci&oacute;n:</p></strong>
+                    <p id="Ubicacion2">a</p>
+                    <strong><p>Rec&aacute;maras:</p></strong>
+                    <p id="Recamaras2">a</p>
+                    <strong><p>Ba&ntilde;os:</p></strong>
+                    <p id="Banos2">a</p>
+                    <strong><p>Tel&eacute;fono:</p></strong>
+                    <p id="Telefono2">a</p>
+                    <strong><p>Precio:</p></strong>
+                    <p id="Precio2">a</p>
+                    <p id="Link2" hidden="true">a</p>
+                    
+                  <center><button id="2" onclick="rentar(this)">Rentar</button> </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contenedor3" class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <div id="casa3" class="panel-heading">Casa de renta</div>
+                <div class="panel-body"><br>
+                  <center><img id="imgCasa3" src="archivos/img/loading.gif" width="500" height="400"></center>
+                  <br>
+                  <strong><p>Informaci&oacute;n:</p></strong>
+                    <p id="Informacion3">a</p>
+                    <strong><p>Ubicaci&oacute;n:</p></strong>
+                    <p id="Ubicacion3">a</p>
+                    <strong><p>Rec&aacute;maras:</p></strong>
+                    <p id="Recamaras3">a</p>
+                    <strong><p>Ba&ntilde;os:</p></strong>
+                    <p id="Banos3">a</p>
+                    <strong><p>Tel&eacute;fono:</p></strong>
+                    <p id="Telefono3">a</p>
+                    <strong><p>Precio:</p></strong>
+                    <p id="Precio3">a</p>
+                    <p id="Link3" hidden="true">a</p>
+                    
+                  <center><button id="3" onclick="rentar(this)">Rentar</button> </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyAsER-42TveXXvHT1BWQUgUe8dcG0_HNo4",
+    authDomain: "findingroom-32423.firebaseapp.com",
+    databaseURL: "https://findingroom-32423.firebaseio.com",
+    projectId: "findingroom-32423",
+    storageBucket: "findingroom-32423.appspot.com",
+    messagingSenderId: "687551977852"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
